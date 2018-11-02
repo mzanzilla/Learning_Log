@@ -3,11 +3,12 @@
 {% block content %}
 
   <form method="post" action="{% url 'register' %}">
-    {%csrf_token%}
+    {% csrf_token %}
     {{ form.as_p }}
 
     <button name="submit">register</button>
-    <input type="hidden" name="next" value="{% url 'index' %}" />
+    <input type="hidden" name="next"
+      value="{% url 'index' %}" />
   </form>
 
 {% endblock content %}
