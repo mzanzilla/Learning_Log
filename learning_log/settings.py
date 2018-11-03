@@ -141,8 +141,8 @@ if cwd == '/app' or cwd[:4] == '/tmp':
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
     # Only allow heroku to host the project.
-    ALLOWED_HOSTS = ['fathomless-plateau-59859.herokuapp.com']
-    DEBUG = True
+    ALLOWED_HOSTS = ['mikemensahlearningapp.herokuapp.com']
+    DEBUG = False
 
     # ALLOWED_HOSTS = [".herokuapp.com", ".researchthroughdesign.org"]
 
